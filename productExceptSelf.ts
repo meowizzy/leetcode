@@ -6,10 +6,12 @@ export class Solution {
   productExceptSelf(nums: Array<number>) {
     const map = {};
 
-    let index = 0;
-
-    for (let i = 0; i < nums.length - 1; i++) {
-
+    for (let i = 0; i < nums.length; i++) {
+      map[nums[i]] = [];
     }
+
+    return ;
   }
 }
+
+console.log(new Solution().productExceptSelf([-1,0,1,2,3]))
