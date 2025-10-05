@@ -10,7 +10,7 @@ export class Solution {
 
     let i = 0;
 
-    while (i < nums.length) {
+    while (start <= end) {
       const mid = Math.floor((start + end) / 2);
 
       if (nums[mid] === target) {
