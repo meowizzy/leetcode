@@ -1,5 +1,5 @@
 export const longestConsecutive = (nums: Array<number>) => {
-    const sortedNums = [...Array.from(new Set(nums.sort((a, b) => a - b)))];
+    const sortedNums = [...Array.from(new Set([...nums].sort((a, b) => a - b)))];
 
     console.log(sortedNums)
 

@@ -13,9 +13,9 @@ export class Solution {
       "<": ">",
     };
 
-    let openClosed;
+    let openClosed: boolean;
 
-    for (let i = 0; i < s.length - 1; i+=2) {
+    for (let i = 0; i < s.length - 1; i += 2) {
       if (brackets[s.charAt(i)] !== s.charAt(i + 1)) {
         openClosed = false;
         break;
@@ -49,6 +49,6 @@ export class Solution {
   }
 }
 
-console.log(new Solution().isValid("[])"));
+console.log(new Solution().isValid("{{[(<>)]}}"));
 
 
