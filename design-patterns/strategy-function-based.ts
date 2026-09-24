@@ -89,4 +89,4 @@ console.log(calc.calculate(price, 10));
 
 calc.setStrategy(wholesalePriceStrategy());
 
-console.log(calc.calculate(price, 20))
+console.log(calc.calculate(price, 20));
